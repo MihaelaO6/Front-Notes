@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .notes-sidebar {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #d7f5ff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #title,
+  #description {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a3b1b6;
+    border-radius: 18px;
+    background-color: #f4f4f4;
+    font-size: 18px;
+    color: black;
+  }
+  
+  
+
+.btn-delete {
+    background-color: rgb(221, 66, 66) !important;
+    color: #dfd9d9;
+    width: 100px;
+
+}
+.btn-delete:hover{
+    background-color: rgb(231, 124, 124);    
+    color: black;
+
+}
+
+.btn-save {
+    background-color: blueviolet; 
+    color: #dfd9d9;
+    width: 100px;
+
+}
+.btn-save:hover{
+    background-color: rgb(161, 110, 207); 
+    color: black;
+}
+.btn-create {
+    background-color:#1f98da;
+    color: white;
+    width: 100px;
+}
+.btn-create:hover{
+    background-color: #5b9ec2; 
+    color: black;
+}
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  .notes-container {
+    flex: 2;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note {
+    background-color: #d6ebec;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 15px;
+    width: 700px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .note:hover {
+    background-color: #b3e3ef;
+    transform: scale(1.02);
+  }
+  
+  .note h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #052c65;
+    border-bottom: 1px solid #2e2520;
+  }
+  
+  .note p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .notes-sidebar,
+    .notes-container {
+      flex: auto;
+      width: 100%;
+    }
+  }

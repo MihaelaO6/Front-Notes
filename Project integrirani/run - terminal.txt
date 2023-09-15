@@ -1,0 +1,5 @@
+You should run in terminal:
+
+Add-migrations NewMigration
+
+Update-Database
